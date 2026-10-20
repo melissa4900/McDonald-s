@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:#222;
+    color:beige;
+    display: grid; /*ativa o css grid para organizar e separar a nave ou elementos */
+    grid-template-columns: 1fr 2fr; /*define a quantidade de colunas e o tamanho */
+    align-items: center;
+}
+.nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+a{
+    color:aliceblue;
+    text-decoration: none;
+    font-size: larger;
+}
+.lanches{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card{
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.titulo{
+    text-align: center;
+}
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+@media (max-width:800px){
+    .lanches{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width:500px){
+    header{
+        grid-template-columns: 1fr;
+    }
+    .lanches{
+        grid-template-columns: 1fr;
+    }
+}
+
